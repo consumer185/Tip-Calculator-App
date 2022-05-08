@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+
+</head>
+
+<body>
+
+  <div id="titleDiv">
+    <h1>SPLI</h1>
+    <h1>TTER</h1>
+  </div>
+
+  <div id="mainDiv">
+
+
+
+    <div id="inputDiv">
+
+      <p id="billTitle">Bill</p>
+      <div class="input-icon">
+        <input id="billInput" type="text" name="" value="">
+        <i>$</i>
+      </div>
+      <p id="selectTipTitle">Select Tip %</p>
+
+      <div id="tipDiv">
+
+
+        <input class="tipbutton" type="button" name="" value="5%">
+        <input class="tipbutton tipActive default" type="button" name="" value="10%">
+        <input class="tipbutton" type="button" name="" value="15%">
+        <input class="tipbutton" type="button" name="" value="20%">
+        <input class="tipbutton" type="button" name="" value="25%">
+        <input id="customTip" type="text" name="" value="Custom">
+
+      </div>
+
+<div id="noOfPeopleDiv">
+
+
+      <p id="noOfPeopleTitle">Number of People</p>
+<p id="cantBeZero" hidden>Can't be zero</p>
+</div>
+      <div class="input-icon">
+        <input id="noOfPeople" type="text" name="" value="2">
+        <i>👥</i>
+      </div>
+
+    </div>
+
+    <div id="resultsDiv">
+
+      <div id="topBox">
+        <div id="topBoxTitles">
+          <p class="totals">Tip Amount</p>
+          <p class="perPerson">/ person</p>
+        </div>
+        <div id="tipPerPerson">$0.00</div>
+      </div>
+
+
+      <div id="bottomBox">
+        <div id="bottomBoxTitles">
+          <p class="totals">Total</p>
+          <p class="perPerson">/ person</p>
+        </div>
+        <div id="totalPerPerson">$0.00</div>
+      </div>
+
+
+      <div id="reset">RESET</div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

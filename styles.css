@@ -1,0 +1,213 @@
+body {
+  background-color: #C5E4E7;
+  font-family: 'Space Mono', monospace;
+}
+
+p {
+  color: hsl(184, 14%, 56%);
+
+}
+
+
+
+i, input {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
+
+}
+
+input {
+  cursor: pointer;
+}
+
+i {
+  opacity: 50%;
+  padding: 0 10px;
+}
+
+h1 {
+  color: #476A6C;
+  line-height: 12px;
+  letter-spacing: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#titleDiv {
+  width: 1340px;
+  height: 80px;
+  padding: 2px;
+  margin-top: 130px;
+}
+
+#billInput, #noOfPeople {
+  width: 372px;
+  height: 46px;
+  background-color: #F3F8FB;
+  border-color: #57A69B;
+  border-width: 2px;
+  box-shadow: none;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+
+
+#tipInput {
+  width: 40px;
+}
+
+#billTitle {
+  margin-bottom: 4px;
+}
+
+#selectTipTitle {
+  margin-top: 48px;
+  margin-bottom: 8px;
+}
+
+
+#mainDiv {
+  margin-top: 70px;
+  margin-left: 215px;
+  height: 480px;
+  width: 920px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#tipDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 380px;
+}
+
+#topBox, #bottomBox {
+  display: flex;
+  width: 320px;
+
+}
+
+#topBoxTitles, #bottomBoxTitles {
+
+  width: 110px;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+#tipPerPerson, #totalPerPerson {
+  text-align: right;
+
+  color: #2cc3b0;
+  font-size: 3rem;
+  width: 210px;
+}
+
+.totals {
+  color: white;
+  margin-bottom: 0;
+}
+
+.perPerson {
+  color: #5C8D92;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+.tipbutton {
+  height: 50px;
+  width: 120px;
+  margin: 5px 0;
+  padding: 5px 0;
+  background-color: #00474B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tipbutton:hover, #reset:hover {
+  background-color: #9FE8DF;
+  cursor: pointer;
+}
+
+#customTip {
+  width: 112px;
+  margin: 5px 0;
+
+  text-align: right;
+  border-radius: 5px;
+  text-align: center;
+  border-style: solid;
+}
+
+.tipActive {
+  background-color: #26C2AD;
+}
+
+#resultsDiv {
+  width: 35%;
+  color: white;
+
+  background-color: #00474b;
+  border-radius: 15px;
+  margin: 30px;
+  padding: 45px;
+}
+
+#reset {
+
+  background-color: #26C2AD;
+  width: auto;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  margin-top: 120px;
+}
+
+#noOfPeopleDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+margin-top: 20px;
+margin-bottom: 0px;
+height: 40px;
+
+}
+
+.input-icon {
+  position: relative;
+}
+
+#cantBeZero {
+  color: #B47C6D;
+}
+
+.input-icon>i {
+  position: absolute;
+  display: block;
+  transform: translate(0, -50%);
+  top: 50%;
+  pointer-events: none;
+  width: 25px;
+  text-align: center;
+  font-style: normal;
+}
+
+
+#inputDiv {
+  padding-top: 24px;
+  padding-left: 45px;
+  width: 480px;
+}
