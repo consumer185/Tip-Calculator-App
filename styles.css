@@ -3,9 +3,10 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 390px) {
   body {
     margin: 0;
+    height: 933px;
   }
 }
 
@@ -44,8 +45,8 @@ h1 {
   margin-top: 130px;
 }
 
-/* On screens that are 500px wide or less */
-@media screen and (max-width: 500px) {
+/* On screens that are 390px wide or less */
+@media screen and (max-width: 390px) {
   #titleDiv {
     width: auto;
     padding: 2px;
@@ -64,6 +65,18 @@ h1 {
   border-style: solid;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 390px) {
+  #billInput, #noOfPeople {
+    width: 348px;
+    height: 46px;
+margin: auto;
+  }
+}
+
+
+
+
 
 #tipInput {
   width: 40px;
@@ -89,8 +102,8 @@ h1 {
   border-radius: 25px;
 }
 
-/* On screens that are 500px wide or less */
-@media screen and (max-width: 500px) {
+/* On screens that are 390px wide or less */
+@media screen and (max-width: 390px) {
   #mainDiv {
     margin-top: 10px;
     margin-left: 0px;
@@ -98,8 +111,10 @@ h1 {
     width: auto;
     display: block;
     background-color: white;
-    border-radius: 25px;
-
+    border-top-right-radius: 25px;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
 
 
 
@@ -114,15 +129,49 @@ h1 {
   width: 380px;
 }
 
+@media screen and (max-width: 390px) {
+  #tipDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+  }
+}
+
+
+
+
 #topBox, #bottomBox {
   display: flex;
   width: 320px;
 }
 
+@media screen and (max-width: 390px) {
+  #topBox, #bottomBox {
+    display: flex;
+    width: auto;
+  }
+}
+
+
+
+
+
 #topBoxTitles, #bottomBoxTitles {
   width: 110px;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 390px) {
+  #topBoxTitles, #bottomBoxTitles {
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+
+
+
 
 #tipPerPerson, #totalPerPerson {
   text-align: right;
@@ -130,6 +179,17 @@ h1 {
   font-size: 3rem;
   width: 210px;
 }
+
+@media screen and (max-width: 390px) {
+  #tipPerPerson, #totalPerPerson {
+    text-align: right;
+    color: #2cc3b0;
+    font-size: 3rem;
+    width: auto;
+  }
+}
+
+
 
 .totals {
   color: white;
@@ -154,6 +214,21 @@ h1 {
   text-align: center;
 }
 
+@media screen and (max-width: 390px) {
+  .tipbutton {
+    height: 50px;
+    width: 160px;
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #00474B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+
 .tipbutton:hover, #reset:hover {
   background-color: #9FE8DF;
   cursor: pointer;
@@ -168,6 +243,19 @@ h1 {
   border-style: solid;
 }
 
+@media screen and (max-width: 390px) {
+  #customTip {
+    width: 152px;
+    margin: 5px 0;
+    text-align: right;
+    border-radius: 5px;
+    text-align: center;
+    border-style: solid;
+  }
+}
+
+
+
 .tipActive {
   background-color: #26C2AD;
 }
@@ -181,7 +269,7 @@ h1 {
   padding: 45px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 390px) {
   #resultsDiv {
 width: auto;
     color: white;
@@ -237,8 +325,10 @@ width: auto;
   width: 480px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 390px) {
   #inputDiv {
-
+    padding-top: 24px;
+    padding-left: 10px;
+    width: auto;
   }
 }
