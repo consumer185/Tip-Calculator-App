@@ -3,19 +3,21 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
-p {
-  color: hsl(184, 14%, 56%);
-
+@media screen and (max-width: 500px) {
+  body {
+    margin: 0;
+  }
 }
 
-
+p {
+  color: hsl(184, 14%, 56%);
+}
 
 i, input {
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-size: 24px;
   text-align: right;
-
 }
 
 input {
@@ -42,6 +44,16 @@ h1 {
   margin-top: 130px;
 }
 
+/* On screens that are 500px wide or less */
+@media screen and (max-width: 500px) {
+  #titleDiv {
+    width: auto;
+    padding: 2px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
 #billInput, #noOfPeople {
   width: 372px;
   height: 46px;
@@ -52,8 +64,6 @@ h1 {
   border-style: solid;
   border-radius: 5px;
 }
-
-
 
 #tipInput {
   width: 40px;
@@ -68,7 +78,6 @@ h1 {
   margin-bottom: 8px;
 }
 
-
 #mainDiv {
   margin-top: 70px;
   margin-left: 215px;
@@ -78,6 +87,23 @@ h1 {
   justify-content: space-between;
   background-color: white;
   border-radius: 25px;
+}
+
+/* On screens that are 500px wide or less */
+@media screen and (max-width: 500px) {
+  #mainDiv {
+    margin-top: 10px;
+    margin-left: 0px;
+    height: auto;
+    width: auto;
+    display: block;
+    background-color: white;
+    border-radius: 25px;
+
+
+
+
+  }
 }
 
 #tipDiv {
@@ -91,22 +117,15 @@ h1 {
 #topBox, #bottomBox {
   display: flex;
   width: 320px;
-
 }
 
 #topBoxTitles, #bottomBoxTitles {
-
   width: 110px;
   margin-bottom: 10px;
-
 }
-
-
-
 
 #tipPerPerson, #totalPerPerson {
   text-align: right;
-
   color: #2cc3b0;
   font-size: 3rem;
   width: 210px;
@@ -143,7 +162,6 @@ h1 {
 #customTip {
   width: 112px;
   margin: 5px 0;
-
   text-align: right;
   border-radius: 5px;
   text-align: center;
@@ -157,15 +175,24 @@ h1 {
 #resultsDiv {
   width: 35%;
   color: white;
-
   background-color: #00474b;
   border-radius: 15px;
   margin: 30px;
   padding: 45px;
 }
 
-#reset {
+@media screen and (max-width: 500px) {
+  #resultsDiv {
+width: auto;
+    color: white;
+    background-color: #00474b;
+    border-radius: 15px;
+    margin: 30px;
+    padding: 45px;
+  }
+}
 
+#reset {
   background-color: #26C2AD;
   width: auto;
   height: 48px;
@@ -180,10 +207,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   width: 380px;
-margin-top: 20px;
-margin-bottom: 0px;
-height: 40px;
-
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: 40px;
 }
 
 .input-icon {
@@ -205,20 +231,14 @@ height: 40px;
   font-style: normal;
 }
 
-
 #inputDiv {
   padding-top: 24px;
   padding-left: 45px;
   width: 480px;
 }
 
+@media screen and (max-width: 500px) {
+  #inputDiv {
 
-
-
-/* On screens that are 600px wide or less */
-@media screen and (max-width: 390px) {
-  body {
-    background-color: red;
-    color: white;
   }
 }
