@@ -253,6 +253,8 @@ border-bottom-right-radius: 0px;
     border-radius: 5px;
     text-align: center;
     border-style: solid;
+    padding: 0;
+
   }
 }
 
