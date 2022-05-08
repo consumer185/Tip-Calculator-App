@@ -168,12 +168,13 @@ border-bottom-right-radius: 0px;
 
 #topBoxTitles, #bottomBoxTitles {
   width: 110px;
+
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 390px) {
   #topBoxTitles, #bottomBoxTitles {
-    width: auto;
+
     margin-bottom: 10px;
   }
 }
@@ -288,8 +289,13 @@ width: auto;
     color: white;
     background-color: #00474b;
     border-radius: 15px;
-    margin: 30px;
-    padding: 45px;
+    margin: 10px;
+
+
+    
+    width: auto;
+
+
   }
 }
 
@@ -303,6 +309,15 @@ width: auto;
   border-radius: 5px;
   margin-top: 120px;
 }
+
+@media screen and (max-width: 390px) {
+  #reset {
+
+    margin-top: 20px;
+  }
+}
+
+
 
 #noOfPeopleDiv {
   display: flex;
@@ -320,6 +335,17 @@ width: auto;
 #cantBeZero {
   color: #B47C6D;
 }
+
+@media screen and (max-width: 390px) {
+#noOfPeopleDiv {
+
+  width: 355px;
+
+}
+
+
+
+
 
 .input-icon>i {
   position: absolute;
@@ -340,8 +366,9 @@ width: auto;
 
 @media screen and (max-width: 390px) {
   #inputDiv {
-    padding-top: 24px;
-    padding-left: 10px;
+    /* padding-top: 24px;
+    padding-left: 10px; */
+    padding: 24px 10px;
     width: auto;
   }
 }
