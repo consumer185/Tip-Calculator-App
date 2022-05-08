@@ -135,7 +135,7 @@ border-bottom-right-radius: 0px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: auto;
+    width: 360px;
   }
 }
 
@@ -216,8 +216,8 @@ border-bottom-right-radius: 0px;
 
 @media screen and (max-width: 390px) {
   .tipbutton {
-    height: 50px;
-    width: 160px;
+
+    width: 170px;
     margin: 5px 0;
     padding: 5px 0;
     background-color: #00474B;
@@ -225,6 +225,8 @@ border-bottom-right-radius: 0px;
     border: none;
     border-radius: 5px;
     text-align: center;
+    line-height: 40px;
+
   }
 }
 
@@ -245,7 +247,7 @@ border-bottom-right-radius: 0px;
 
 @media screen and (max-width: 390px) {
   #customTip {
-    width: 152px;
+    width: 162px;
     margin: 5px 0;
     text-align: right;
     border-radius: 5px;
