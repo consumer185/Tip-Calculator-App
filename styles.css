@@ -361,7 +361,7 @@ background-color: #F3F8FB;
 
 
 @media screen and (max-width: 390px) {
-  #noOfPeopleTitle {
+  #noOfPeopleTitle, #cantBeZero {
     margin-top: 0px;
     margin-bottom: 0px;
   }
