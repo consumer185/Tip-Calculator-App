@@ -20,23 +20,7 @@ input {
   font-size: 24px;
   text-align: right;
   cursor: pointer;
-}
-
-.input-container {
-  display: flex;
-  width: 100%;
-}
-
-i {
-  opacity: 50%;
-  padding: 0 10px;
-}
-
-@media screen and (max-width: 390px) {
-  i {
-    opacity: 50%;
-    padding: 0;
-  }
+  color: #003739;
 }
 
 h1 {
@@ -46,6 +30,15 @@ h1 {
   font-size: 1.5rem;
   text-align: center;
 }
+
+.input-container {
+  display: flex;
+  width: 100%;
+}
+
+
+
+
 
 #titleDiv {
   width: 1340px;
@@ -67,13 +60,24 @@ h1 {
 #billInput, #noOfPeople {
   width: 372px;
   height: 46px;
-  background-color: #F3F8FB;
-  border-color: #57A69B;
+
+  border-color: #F3F8FB;
   border-width: 2px;
   box-shadow: none;
   border-style: solid;
   border-radius: 5px;
 }
+
+
+
+
+#billInput:focus, #noOfPeople:focus, #customTip:focus {
+  outline: none;
+  border-color: #5FABA1;
+}
+
+
+
 
 #billInput {
   background: #F3F8FB url("images/dollar.png") left no-repeat;
@@ -299,12 +303,10 @@ h1 {
   text-align: right;
   border-radius: 5px;
   text-align: center;
-  border-style: solid;
+  border-color: #F3F8FB;
 background-color: #F3F8FB;
-
-
-
-
+color: #4F6F6E;
+border-style: solid;
 }
 
 @media screen and (max-width: 390px) {
@@ -315,19 +317,21 @@ background-color: #F3F8FB;
     text-align: right;
     border-radius: 5px;
     text-align: center;
-    border-style: solid;
+    border: none;
     padding-right: 8px
   }
 }
 
 .tipActive {
   background-color: #26C2AD;
+  color: #00474B;
 }
 
 
 
 #reset {
   background-color: #26C2AD;
+  color: #00474B;
   width: auto;
   height: 48px;
   line-height: 48px;

@@ -35,6 +35,8 @@ $('#reset').click(function() { // reset button selected -> clear all inputs
   $("#noOfPeople").val("2") // reset number of people field to 2
   $("#tipPerPerson").html("$0.00");
   $("#totalPerPerson").html("$0.00");
+  $("#cantBeZero").hide();
+  $("#noOfPeople").css('border-color', '#F3F8FB');
 });
 
 
@@ -50,8 +52,10 @@ function makeCalculation() {
 
   if ($("#noOfPeople").val() === ("0")) {
     $("#cantBeZero").show();
+    $("#noOfPeople").css('border-color', '#B47C6D');
   } else {
     $("#cantBeZero").hide();
+$("#noOfPeople").css('border-color', '#F3F8FB');
 
     if ($("#customTip").val() === ("Custom")) {
       console.log("custom tip NOT being used");
